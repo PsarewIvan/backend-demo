@@ -9,3 +9,5 @@ app.get('/api', (req: any, res: any) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
+
+app.use(express.static('public'));
